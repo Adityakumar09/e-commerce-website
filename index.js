@@ -198,7 +198,39 @@ function delcrt(a){
 // }
 
 
+let b=document.getElementById("log")
+let fu=document.getElementById("pass")
 
+function show(){
+    let x=document.getElementsByClassName("sign-in-box")
+    let r=document.getElementsByClassName("sign")
+    var click1=1 ;
+    x[0].onclick=function(){
+        click1++;
+        if(click1%2==0){
+            r[0].style.opacity=1
+        }
+        else{
+            r[0].style.opacity=0
+        }
+        console.log(click1)
+        
+    }
+}
+
+function login(){
+    if(b.value!="817815495" || fu.value!="aditya"){
+        let yup=document.getElementById("sign").getElementsByTagName("span")
+        yup[0].innerHTML=`INCORRECT LOGIN ID AND PASSWORD`
+        setInterval(function(){
+            yup[0].innerHTML=``
+        },2000)
+    }
+    
+    b.value=""
+    fu.value=""
+
+}
 
 
 
