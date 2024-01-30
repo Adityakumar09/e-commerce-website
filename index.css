@@ -9,6 +9,9 @@ a{
     text-decoration: none;
 }
 
+body{
+    background-color: #bbf4d1;
+}
 .container{
     width: 100%;
     height: 100%;
@@ -21,7 +24,10 @@ a{
     /* position: static; */
     width: 100%;
     height: 7vmax;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-color: #f712e6;
+    background-image: linear-gradient(43deg, #f712e6 0%, #6c7bff 46%, #00ffd5 100%);
+    
     display: flex;
     flex-direction: column;
     
@@ -29,7 +35,10 @@ a{
 .navi1{
     width: 100%;
     height: 75%;
-    background-color: rgb(62, 172, 172);
+    /* background-color: rgb(62, 172, 172);  */
+    background-color: #f712e6;
+    background-image: linear-gradient(90deg, #f712e6 8%, #6c7bff 50%, #00ffd5 100%);
+    
     display: flex;
     flex-direction: row;
     padding: 25px;
@@ -127,10 +136,12 @@ a{
     /* align-items: center;  */
 
 }
-.cart:hover ,.sign-in-box:hover,.menu:hover{
-    background-color: rgb(57, 97, 84);
+.cart:hover ,.sign-in-box:hover{
+    background-color: rgb(247, 0, 255);
 }
-
+.menu:hover{
+    background-color: rgb(50, 177, 139);
+}
 .num{
     /* position: absolute; */
     color: white;
@@ -147,7 +158,9 @@ a{
 .navi2{
     width: 100%;
     height: 25%;
-    background-color: aqua;
+    border-top: .0002rem solid black;
+    /* background-color: aqua; */
+    background-image: linear-gradient(0deg,#e0e71a 10%  #04f500 45%, #c20bff 100%);
     padding-left: 150px;
     padding-right: 150px;
     display: flex;
@@ -493,6 +506,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     opacity: 0;
     transition-property: opacity ;
     transition-delay: .2s;
+    /* box-shadow: rgba(255, 0, 0, 0.51)  ; */
 
 }
 .sign input{
